@@ -1,67 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandyala Sunil Varma's Portfolio</title>
-    <link rel="stylesheet" href="Styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunil Varma Nandyala - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Nandyala Sunil Varma</h1>
-        <p>SD-57069 ∙ 605-202-1939 ∙ Sunilvarma.Nandyala@Coyotes.usd.edu ∙ LinkedIn</p>
-    </header>
-    <section>
-        <h2>Education</h2>
-        <p>University of South Dakota, South Dakota<br>
-        Master of Science: Computer Science, Aug 2023 – Jan 2025<br>
-        Relevant Coursework: Algorithms and data structures, Machine Learning, Networking security, Computer vision</p>
-        <p>Sathyabama Institute of Science and Technology, Chennai- India<br>
-        Bachelor of Engineering in Computer Science, CGPA: 8.2/10.0, Aug 2018 – May 2022</p>
-    </section>
-    <section>
-        <h2>Technical Skills</h2>
-        <p>Programming: Python, SQL, Angular, HTML, CSS, Java<br>
-        Tools & Technology: GIT, scikit-learn, Matplotlib, TensorFlow, Pytorch, NLTK, Linux, GitHub, Postman, SpringBoot, Mysql Workbench</p>
-    </section>
-    <section>
-        <h2>Work Experience</h2>
-        <h3>STL - Sterlite Technologies - Graduate Engineering Trainee</h3>
-        <p>July 2022 – March 2023</p>
-        <ul>
-            <li>Designed and developed a Library management System using Spring Boot, MySQL & Angular. Deployed 4 microservices for User, Staff, Book & Details, with secure JWT authentication.</li>
-            <li>Innovated and designed a user-friendly frontend interface using Angular & Angular material framework. Wireframed & implemented pages for User: Login/Signup, Logout, Books, Cart. For Staff: Login/Signup, Logout, Userslist, Bookslist, Bookstatuslist</li>
-            <li>Improved the functionality by adding a search button to get books by title/id. Deployed on a local system using Jenkins pipeline for each microservice.</li>
-        </ul>
-        <h3>Intern, Programmer Analyst Trainee – Cognizant – Chennai, INDIA (Remote)</h3>
-        <p>Jan 2022 – June 2022</p>
-        <ul>
-            <li>Internship focused on Python data visualization, data cleaning, and training/testing for a training project.</li>
-            <li>Applied skills in data analysis, contributing to effective project outcomes.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Projects</h2>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Portfolio.</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="intro">Hello, I'm</p>
+      <h1>Sunil Varma Nandyala</h1>
+      <p class="description">Graduate Student at <span class="highlight">University of South Dakota</span> | Master's in Computer Science</p>
+      <p class="sub-description">Passionate about software development, machine learning, and data analysis.</p>
+      <div class="buttons">
+        <a href="Resume_Sunil_Varma-2.pdf" class="btn download-cv" download>Download CV</a>
+        <a href="https://www.linkedin.com/in/sunil-varma-nandyala" class="btn connect" target="_blank">Connect</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="profile.png" alt="Sunil Varma Nandyala">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a Master's student in Computer Science at the University of South Dakota. I specialize in machine learning, data analysis, and software development. I have a Bachelor's in Computer Science from Sathyabama Institute of Science and Technology. My goal is to leverage my skills to build impactful software solutions.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skill-list">
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <p>Python, Java, SQL, HTML, CSS, Angular</p>
+      </div>
+      <div class="skill-category">
+        <h3>Tools & Technologies</h3>
+        <p>Spring Boot, TensorFlow, PyTorch, scikit-learn, Git, MySQL, MongoDB, AWS, Jenkins, Docker</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-item">
         <h3>Library Management System</h3>
-        <ul>
-            <li>Developed a comprehensive Library Management System with Spring Boot, MySQL, and Angular, deploying four secure microservices for User, Staff, Book, and Details, incorporating JWT authentication.</li>
-            <li>The user-friendly Angular frontend includes pages for User and Staff operations, and I enhanced functionality with a search feature. Deployment utilized Jenkins pipelines for each microservice on the local system.</li>
-        </ul>
-        <h3>Innovative Recipe Retrieval System</h3>
-        <ul>
-            <li>Introduced a Recipe Retrieval system using tokenization, BM25, and TF IDF algorithms to enhance personalized recipe recommendations.</li>
-            <li>By breaking down user input ingredients and analyzing word relevance and importance, the system provides accurate and context-aware recipe rankings.</li>
-            <li>Offers cooking enthusiasts a tailored and efficient culinary experience.</li>
-        </ul>
+        <p>A web application built with Spring Boot, MySQL, and Angular. Includes JWT authentication, microservice architecture, and Jenkins CI/CD pipeline for deployment.</p>
+      </div>
+      <div class="project-item">
+        <h3>Recipe Recommendation System</h3>
+        <p>Developed a recipe recommendation engine using BM25, TF-IDF, and tokenization. Provides personalized recipe suggestions based on ingredient relevance.</p>
+      </div>
+      <div class="project-item">
         <h3>US Regional Sales Data Analysis</h3>
-        <ul>
-            <li>Conducted a comprehensive analysis of US Regional Sales data, applying Python, machine learning models (Linear Regression, Random Forest), and EDA techniques to forecast unit prices.</li>
-            <li>Achieved impactful results, improving decision-making insights for businesses. Implemented data preprocessing, feature engineering, and model evaluation, showcasing expertise in analytics and contributing to data-driven decision-making strategies.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Research</h2>
-        <p>Researched and collected data from Google Scholar for Publication Automation System and published paper in National Conference on Computational Intelligence and Communication Networks.</p>
-    </section>
+        <p>Utilized Python for data analysis and machine learning (Linear Regression, Random Forest) to analyze sales data and predict future trends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience-item">
+      <h3>Graduate Engineering Trainee - STL, Sterlite Technologies</h3>
+      <p class="experience-date">July 2022 – March 2023</p>
+      <ul>
+        <li>Developed a Library Management System using Spring Boot, MySQL, and Angular, with JWT authentication and microservices.</li>
+        <li>Deployed the system using Jenkins for continuous integration and delivery.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Intern - Programmer Analyst Trainee – Cognizant</h3>
+      <p class="experience-date">Jan 2022 – June 2022 (Remote)</p>
+      <ul>
+        <li>Worked on Python-based data visualization and analysis for various internal projects.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you're interested in collaborating or have any opportunities in mind, feel free to get in touch with me.</p>
+    <div class="contact-details">
+      <p><strong>Email:</strong> Sunilvarma.Nandyala@Coyotes.usd.edu</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sunil-varma-nandyala" target="_blank">Ping me through LinkedIn</a></p>
+    </div>
+    <!-- Contact Form -->
+    <form action="mailto:Sunilvarma.Nandyala@Coyotes.usd.edu" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Sunil Varma Nandyala. All rights reserved.</p>
+      <p>Made with &#10084; for better connections and opportunities.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sunil-varma-nandyala" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+        <!-- Add other social media links if needed -->
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
